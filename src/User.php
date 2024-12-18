@@ -46,7 +46,7 @@ class User
         }
     }
 
-    public function DeleteUser(int $id): void
+    public function deleteUser(int $id): void
     {
         $sql = "DELETE FROM Users WHERE id = ?";
         $this->pdo->query($id);
